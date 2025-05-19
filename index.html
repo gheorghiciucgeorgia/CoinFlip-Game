@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip Game</title>
+    <link rel="icon" type="image/svg+xml" href="/head-coin.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exile&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="font-family:'Exile';" class="h-[100%] bg-[#4E6688]">
+    <div
+        class="container bg-white w-[400px] p-[50px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] box-shadow-[15px,30px,25px, rgba(0,0,0,0.1)] rounded-[10px] perspective-[300px]">
+        <div class="stats text-right color-[#101020] fw-500 line-height-[25px]">
+            <p id="heads-count">Heads: 0</p>
+            <p id="tail-count">Tails: 0</p>
+        </div>
+        <div class="coin h-[150px] w-[150px] relative my-[50px] my-auto transform-3d" id="coin">
+            <div class="heads">
+                <img src="head-coin.svg" alt="Heads" class="w-[145px]">
+            </div>
+            <div class="tails rotate-x-180 absolute w-full h-full backface-hidden">
+                <img src="tail-coin.svg" alt="Tails">
+            </div>
+        </div>
+        <div class="buttons flex justify-between">
+            <button id="flip-button"
+                class="disabled:bg-[#e1e0ee] disabled:text-[#101020] disabled:border-[#e1e0ee] bg-[#424ae0] text-white w-[120px] py-[10px] px-[0px] border-[2.5px] border-solid border-[#424ae0] radius-[5px] cursor-pointer">Flip
+                Coin</button>
+            <button id="reset-button"
+                class="bg-[#fff] text-[#424ae0] w-[120px] py-[10px] px-[0px] border-[2.5px] border-solid border-[#424ae0] radius-[5px] cursor-pointer">Reset</button>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
