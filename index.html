@@ -13,27 +13,27 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body style="font-family:'Exile';" class="h-[100%] bg-[#4E6688]">
+<body   style="font-family:'Exile'; background: linear-gradient(to right, #332D56, #4E6688, #71C0BB, #E3EEB2);" class="min-h-screen">
     <div
-        class="container bg-white w-[400px] p-[50px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] box-shadow-[15px,30px,25px, rgba(0,0,0,0.1)] rounded-[10px] perspective-[300px]">
-        <div class="stats text-right color-[#101020] fw-500 line-height-[25px]">
+        class="container bg-white w-[400px] p-[50px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] box-shadow-[15px,30px,25px, rgba(0,0,0,0.1)] rounded-[10px]">
+        <div class="stats text-right color-[#101020] font-[500] line-height-[25px]">
             <p id="heads-count">Heads: 0</p>
-            <p id="tail-count">Tails: 0</p>
+            <p id="tails-count">Tails: 0</p>
         </div>
-        <div class="coin h-[150px] w-[150px] relative my-[50px] my-auto transform-3d" id="coin">
+        <div class="coin" id="coin">
             <div class="heads">
                 <img src="head-coin.svg" alt="Heads" class="w-[145px]">
             </div>
-            <div class="tails rotate-x-180 absolute w-full h-full backface-hidden">
-                <img src="tail-coin.svg" alt="Tails">
+            <div class="tails">
+                <img src="tail-coin.svg" alt="Tails" class="w-[145px]">
             </div>
         </div>
         <div class="buttons flex justify-between">
             <button id="flip-button"
-                class="disabled:bg-[#e1e0ee] disabled:text-[#101020] disabled:border-[#e1e0ee] bg-[#424ae0] text-white w-[120px] py-[10px] px-[0px] border-[2.5px] border-solid border-[#424ae0] radius-[5px] cursor-pointer">Flip
+                class="disabled:bg-[#E3EEB2] disabled:text-[#332D56] disabled:border-[#E3EEB2] bg-[#332D56] text-white w-[120px] py-[10px] px-[0px] border-[2.5px] border-solid border-[#332D56] radius-[5px] cursor-pointer">Flip
                 Coin</button>
             <button id="reset-button"
-                class="bg-[#fff] text-[#424ae0] w-[120px] py-[10px] px-[0px] border-[2.5px] border-solid border-[#424ae0] radius-[5px] cursor-pointer">Reset</button>
+                class="bg-[#fff] text-[#332D56] w-[120px] py-[10px] px-[0px] border-[2.5px] border-solid border-[#332D56] radius-[5px] cursor-pointer">Reset</button>
         </div>
     </div>
     <script src="/script.js"></script>
