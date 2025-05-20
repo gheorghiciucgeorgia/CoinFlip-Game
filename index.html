@@ -13,18 +13,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body   style="font-family:'Exile'; background: linear-gradient(to right, #332D56, #4E6688, #71C0BB, #E3EEB2);" class="min-h-screen">
+<body style="font-family:'Exile'; background: linear-gradient(to right, #332D56, #4E6688, #71C0BB, #E3EEB2);"
+    class="min-h-screen">
     <div
-        class="container bg-white w-[400px] p-[50px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] box-shadow-[15px,30px,25px, rgba(0,0,0,0.1)] rounded-[10px]">
+        class="container bg-white w-[400px] p-[50px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] box-shadow-[15px,30px,25px, rgba(0,0,0,0.1)] rounded-[10px] perspective-[300px]">
         <div class="stats text-right color-[#101020] font-[500] line-height-[25px]">
             <p id="heads-count">Heads: 0</p>
             <p id="tails-count">Tails: 0</p>
         </div>
-        <div class="coin" id="coin">
-            <div class="heads">
+        <div class="coin h-[150px] w-[150px] relative my-[50px] mx-auto" id="coin">
+            <div class="heads absolute w-full h-full">
                 <img src="head-coin.svg" alt="Heads" class="w-[145px]">
             </div>
-            <div class="tails">
+            <div class="tails absolute w-full h-full">
                 <img src="tail-coin.svg" alt="Tails" class="w-[145px]">
             </div>
         </div>
